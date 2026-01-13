@@ -6,6 +6,7 @@ System administration scripts. Built with a focus on Enterprise Linux (RHEL-base
 
 - `server/` - Scripts that run on target servers
 - `workstation/` - Scripts that run from admin workstation
+- `boilerplates/` - Documentation and conventions
 - `lib/` - Reference implementations (optional)
 - `docs/` - Documentation and conventions
 

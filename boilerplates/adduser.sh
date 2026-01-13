@@ -1,12 +1,23 @@
 #!/usr/bin/env bash
 #
-# Script:      adduser.sh
-# Description: Simple script to add batch users from file
-# Author:      Thomas Lutkus
-# Date:        2026-01-12
-# Usage:       ./adduser.sh FILENAME
+# Script: adduser.sh
+# Purpose: Simple script to batch add users via input file
+# 
+# Copyright (C) 2026 Thomas Lutkus
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# Notes:       Requires an input file format username,password,secondary_group per line
+# Compatibility: RHEL 9+, Ubuntu 20.04+
+# Dependencies: csv-style file with username,password,secondary_group columns
+# Requires: root
+#
+# Usage: ./adduser.sh [filename]
+#
+# Author: Thomas Lutkus
+# Date: 2026-01-12
+# Version: 1.0
 
 set -euo pipefail
 
